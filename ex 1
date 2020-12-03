@@ -1,0 +1,15 @@
+def calc(x,y):
+    """
+    :param x: 11
+    :param y: 10
+    :return: 1442
+    """
+    if x > y:
+        return x**3 + x + y**2
+
+    else:
+        return (x**2 - 2 * x + x**(1/2))/x**(3/5)
+a = float(input('a = '))
+b = float(input('b = '))
+u = calc(a,b) + calc(2,a) + 2
+print('U = {}'.format(u))
