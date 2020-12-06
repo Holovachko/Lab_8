@@ -1,14 +1,10 @@
+import math
 def calc(x,y):
-    """
-    :param x: 11
-    :param y: 10
-    :return: 1442
-    """
     if x > y:
-        return x**3 + x + y**2
+        return x**3 + math.fabs(x**2 + x**4)
 
     else:
-        return (x**2 - 2 * x + x**(1/2))/x**(3/5)
+        return (x**2 - 2 * x + math.fabs(x))/x**(3/5)
 a = float(input('a = '))
 b = float(input('b = '))
 u = calc(a,b) + calc(2,a) + 2
